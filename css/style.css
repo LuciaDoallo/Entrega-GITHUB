@@ -12,7 +12,7 @@ a{
 }
 
 body{
-    background-color: black;
+    background-image: linear-gradient(to bottom,black, black , rgb(172, 38, 161) ) 
 }
 .img_header {
     width: 100%;
@@ -53,9 +53,11 @@ nav ul li a{
 }
 
 
-.img_index  div img{
+.img_index  div img:hover{
     position: relative;
     left: 50px;
+    transition: 2s;
+    transform: translate(20px, 20px);
 } 
 
 .titulo_index  div h1{
