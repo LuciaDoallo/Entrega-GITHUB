@@ -20,18 +20,21 @@ body{
     
 }
 /* Barra navegacio ------------------------*/
-nav ul li {
+nav ul li{
     display: inline-flex;
     align-items: center;
     justify-items: center;
     margin: 20px;
     font-family: 'Montserrat', sans-serif ;
+    
 }
 
 nav ul li a{
     color: white;
     font-size: 30px;
     line-height: 20px;
+    
+
 
 }
 /* --------------------------------------------- */
@@ -69,8 +72,24 @@ nav ul li a{
     color: white;
     font-family: 'Montserrat', sans-serif ;
     text-align: center;
-}
 
+    animation-name: un_efecto;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 10s
+}
+@keyframes un_efecto {
+    0%{ color: rebeccapurple; }
+    10%{ color: blue ; }
+    25%{ color:aliceblue;
+    font-size: 50px; }
+    50%{ color: rebeccapurple; }
+    75%{ color: blue ;}
+    100%{color:aliceblue;
+        font-size: 40px;}
+ }
+ 
 .parrafo_index  div p{
     width: auto;
     height: auto;
@@ -98,11 +117,17 @@ footer ul li{
 }
 
 
+
+
 footer{
     height: 120px;
     /* background-image: url('https://img1.wallspic.com/previews/8/2/9/6/4/146928/146928-textil_de_rayas_rosa_y_negro-x750.jpg'); */
 
     
+}
+.efecto:hover{
+    transition: 2s;
+    transform: scale(1.5, 1.5);
 }
 
 .imgT{
@@ -111,9 +136,11 @@ footer{
     font-size: 50px ;
     position: relative;
     bottom: 15px; 
+
 }
 .centrar{
     text-align: center;
+    display: inline;
 }
 /* ---------------------------------------------------------- */
 
